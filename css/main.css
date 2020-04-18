@@ -2,6 +2,30 @@
 
 body {
     font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #F0FFFF;
+    color: whitesmoke
+}
+
+/* header */
+
+header {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#20B2AA;
+    }
+
+h1 {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+.header-subtitle {
+    font-size: 4rem;
 }
 
 /* main */
@@ -14,21 +38,77 @@ main {
     
 }
 
-.form {
+.about-me, .skills, .portfolio, .clients {
     margin:0 auto;
-    width: 40%;
-    padding: 0 4rem;
+    width: 100vw;
+    padding: 1.8rem 0
+}
+
+/* about me */
+
+.about-me {
+    background-color: CornflowerBlue;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center  ;
+}
+
+p {
+    font-size: 1.6rem;
+    padding: 5rem
+}
+
+
+/* skills */
+
+.skills {
+    background-color: slateblue;
+}
+
+.skills-ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-ul li {
+    font-size: 2rem;
+}
+
+/* ṕortfolio */
+.portfolio {
+    background-color: Goldenrod;
+}
+
+/* clients */
+
+
+.clients {
+    background-color: SlateGray;
+}
+
+
+/* form */
+.form-wr {
+    background-color: DarkSlateGray;
+    padding-bottom: 3rem;
+    width: 60vw;
+    padding: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: centers;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 1rem 0;
 }
 
 
 input[type=text], input[type=email], input[type=tel] {
-    width: 45%;
+    width: 25%;
     padding: 0.5rem 0 0.5rem 0.5rem
 }
 
@@ -37,8 +117,13 @@ input[type=text], input[type=email], input[type=tel] {
 }
 
 textarea[name=comments] {
-    width: 100%;
+    width: 76%;
     box-sizing: border-box;
     height: 100%;
     
+}
+
+input[type=submit] {
+    margin: 0 auto;
+    -webkit-appearance: none;
 }
