@@ -1,0 +1,44 @@
+/* Globales */
+
+body {
+    font-size: 10px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+.form {
+    margin:0 auto;
+    width: 40%;
+    padding: 0 4rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+
+input[type=text], input[type=email], input[type=tel] {
+    width: 45%;
+    padding: 0.5rem 0 0.5rem 0.5rem
+}
+
+.comment-row {
+    height: 5rem;
+}
+
+textarea[name=comments] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    
+}
