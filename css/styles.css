@@ -1,0 +1,55 @@
+/* globales */
+
+
+
+/* header */
+
+header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* form */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 50%;
+    padding-left: 7rem;
+}
+
+.form-section {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin: .5em 0
+}
+
+.form-radio {
+    justify-content: flex-start;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.radio-sub {
+    margin: 0 6rem 0 0 
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 80%
+}
+
+input[type=text]:focus:valid, input[type=email]:focus:valid, input[type=number]:focus:valid{
+    background-color: honeydew;
+}
+
+input[type=text]:focus:invalid, input[type=email]:focus:invalid, input[type=number]:focus:invalid{
+    background-color: lightsalmon;
+}

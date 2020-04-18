@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario: Segundo Reto</title>
+</head>
+<body>
+    <header>
+        <h1>Gracias por ayudarnos a mejorar</h1>
+        <p class="subtitle">Por favor ingrese sus datos</p>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form action="">
+                <div class="form-section">
+                    <label for="firstname">Nombres</label>
+                    <input type="text" id="firstname" required pattern="[a-zA-Z ]+">
+                </div>
+                <div class="form-section">
+                    <label for="lastname">Apellidos</label>
+                    <input type="text" id="lastname" required pattern="[a-zA-Z ]+">
+                </div>
+                <div class="form-section">
+                    <label for="age">Edad</label>
+                    <input type="number" min="18" max="80" id="age" required>
+                </div>
+                <div class="radio-container">
+                    <p class="radio-sub">Sexo</p>
+                    <div class="option-container">
+                        <div class="form-section form-radio">
+                            <input type="radio" id="male" name="sex" checked>
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="form-section form-radio">
+                            <input type="radio" id="female" name="sex">
+                            <label for="female">Femenino</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" required pattern="[a-zA-Z0-9]+" minlength="8">
+                </div>
+                <div class="form-section">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" required>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
