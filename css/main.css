@@ -9,11 +9,12 @@ html {
 }
 
 body {
-    font-size: 10px;
+    font-size: 10px;    
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #F0FFFF;
-    color: whitesmoke
+    color: whitesmoke;
+    width: 100vw;
 }
 
 
@@ -41,7 +42,7 @@ section {
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
 }
 
 h1 {
@@ -67,15 +68,13 @@ form {
 }
 
 
-/* main doc */
-
 
 
 
 /* about me */
 
 .about-me {
-    background-color: CornflowerBlue;
+    background-color: #7299FE;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -105,7 +104,7 @@ form {
 /* skills */
 
 .skills {
-    background-color: slateblue;
+    background-color: #9122FF;
 }
 
 .skills-ul { 
@@ -130,7 +129,7 @@ form {
     height: 30px;
     width: 100%;
     border: 1px solid black;
-    background-color: snow;
+    background-color: white;
     border-radius: 16px;
 }
 
@@ -144,7 +143,7 @@ form {
 
 /* ṕortfolio */
 .portfolio {
-    background-color: Goldenrod;
+    background-color: #FFD233;
 }
 
 .portfolio-grid {
@@ -165,19 +164,29 @@ form {
 
 
 .clients {
-    background-color: SlateGray;
+    background-color: #3F4E62;
 }
 
+.client-container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.client-cell {
+    width: 250px;
+    height: 100px;
+}
 
 /* form */
 .form-wr {
-    background-color: DarkSlateGray;
+    background-color: #1687A0;
     padding-bottom: 3rem;
     width: 100vw;
     padding: 0 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: centers;
+    justify-content: center;
 }
 
 .form-row {
@@ -206,4 +215,10 @@ textarea[name=comments] {
 input[type=submit] {
     margin: 0 auto;
     -webkit-appearance: none;
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
+    border: 0px;
+    background-color: #233451;
+    font-style: 'Roboto', sans-serif;
+    color: whitesmoke;
 }
